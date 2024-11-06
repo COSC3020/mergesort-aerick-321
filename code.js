@@ -6,5 +6,7 @@ function mergesort(low, high, array, subarr) {
        var mid = Math.floor((low+hi)/2);
         
     }
+    let size =1;
+    
     return array;
 }
