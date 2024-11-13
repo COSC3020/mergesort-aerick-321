@@ -16,15 +16,16 @@ function mergesort(array) {
     return array;
 }
 
-function merge(arr, left, mid, right){
-    
-    while(left > 1 && right >1){
-        if (left < right){
-           
+function merge(subarr, left, mid, right){
+    let top = mid +1;
+    while(left <= mid && top <= rigth){
+        if (subarr[left]<= subarr[top]){
+           left++;
         }
         else{
            
         }
+        
     }
     return 
 }
