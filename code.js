@@ -22,7 +22,7 @@ function merge(subarr, left, mid, right){
         else{
           let value = subarr[top];
             for(let i = top; i > left; i--){
-                subarr[k] = subarr[k-1];
+                subarr[i] = subarr[i-1];
             }
             subarr[left] = value;
             left++;
