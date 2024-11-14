@@ -4,8 +4,8 @@ function mergesort(array) {
     }
         for (let size = 1; size <=array.length - 1; size = 2 * size) {
             for (let left = 0; left < array.length - 1; left += 2 * size){
-               let mid = Math.floor(left + size - 1, array.length - 1);
-                let right = Math.floor(left + 2 * size - 1, array.length - 1);
+               let mid = Math.min(left + size - 1, array.length - 1);
+                let right = Math.min(left + 2 * size - 1, array.length - 1);
                 merge(array, left, mid, right)
             }
         }    
