@@ -33,7 +33,5 @@ function merge(subarr, left, mid, right){
             mid++;
             top++;
         }
-        
     }
-    return 
 }
