@@ -19,11 +19,19 @@ function mergesort(array) {
 function merge(subarr, left, mid, right){
     let top = mid +1;
     while(left <= mid && top <= rigth){
-        if (subarr[left]<= subarr[top]){
+        if (subarr[left] <= subarr[top]){
            left++;
         }
         else{
-           
+          let a = subarr[top];
+            let b = top;
+            for(let i = 0; b > left +1; i++){
+                subarr[k] = subarr[k-1];
+            }
+            subarr[left] = b;
+            left++;
+            mid++;
+            top++;
         }
         
     }
